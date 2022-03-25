@@ -1,0 +1,21 @@
+.fraseContainer{
+    background-color: #333;
+    border: 1px solid #111;
+}
+
+.fraseContent{
+    color: #FFF;
+    background-color: #333;
+    margin:0;
+}
+
+/*
+não aceita criação de classes com hífen, por exemplo:
+.frase-container    não é aceito
+
+nomeclaturas aceitas:
+.fraseContainer     camelCase
+.frase_container    underline
+
+
+*/
