@@ -4,11 +4,11 @@ function Form (){
 
     function cadastrarUsuario(e){ //e ou event
         e.preventDefault() //mantem a requisição na tela
-        console.log(name)
-        console.log("Cadastrou o usuário")
+        console.log(`Usuário ${name} foi cadastrado com a senha: ${password}`)
     }
 
     const [name, setName] = useState('indefinido') //setar o valor 'Indefinido' como default
+    const [password, setPassword] = useState()
 
     return (
         <div>
@@ -20,7 +20,7 @@ function Form (){
                 </div>
                 <div>
                     <label htmlFor="password">Senha: </label>
-                    <input type="text" id="password" name="password" placeholder="Digite a sua senha"/>
+                    <input type="text" id="password" name="password" placeholder="Digite a sua senha" onChange={(e)=>setPassword(e.target.value)}/>
                 </div>
                 <div>
                     <input type="submit" value="Cadastrar"/>
